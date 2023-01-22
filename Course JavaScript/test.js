@@ -20,3 +20,18 @@ function sair(){
     alert("Até mais!")
     area.innerHTML = "Você Saiu!"
 }
+
+// Utilizando Parametros
+function mediaAluno(nota1,nota2){
+    var media = (nota1 + nota2) / 2
+    if(media >= 7){
+        console.log("Aprovado! " + media)
+    }else{
+        console.log("Reprovado! " + media)
+    }
+}
+
+function aluno(nome,curso){
+    var mensagem = 'Seja bem vindo ' + nome + ' ao curso de ' + curso
+    console.log(mensagem)
+}
