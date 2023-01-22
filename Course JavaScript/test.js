@@ -1,8 +1,22 @@
-// PEDE PARA DIGITAR SEU NOME E SOBRENOME NO NAVEGADOR
-var nome = prompt('Qual seu nnome?')
-var sobrenome = prompt('Qual seu sobrenome?')
-console.log('Olá ' + nome + ' ' + sobrenome)
+var area = document.getElementById("area")
 
-document.write("<h1>Bem Vindo ao projeto " + nome + "</h1>")
+function entrar(){
+    var nome = prompt("Digite seu nome")
 
-document.write("<img src='https://sujeitoprogramador.com/steve.png' alt='Foto do Steve' />")
+    if(nome == '' || nome == null){
+        alert("Ops algo deu errado")
+        area.innerHTML = "Clique no botão para acessar..."
+    }else{
+        area.innerHTML = "Bem vindo " + nome
+
+        let botaoSair = document.createElement("button")
+        botaoSair.innerText = "Sair da conta"
+        botaoSair.onclick = sair
+        area.appendChild(botaoSair)
+    }
+}
+
+function sair(){
+    alert("Até mais!")
+    area.innerHTML = "Você Saiu!"
+}
