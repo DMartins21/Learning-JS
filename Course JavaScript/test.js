@@ -1,16 +1,23 @@
-//While
-/*
-var x = 5
+// Switch
 
-while(x < 10){
-    document.write('<br> O valor de X é:' + x)
-    x++
-}
-*/
+function pedir(){
+    var valor = prompt('Digite um valor de 1 a 4')
 
-//For
-var valor = 15
-
-for(a = 0; a < valor;a++){
-    document.write('<br> O valor do A é: ' + a)
+    switch(Number(valor)){
+        case 1:
+            alert('Você escolheu 1 - Suco')
+            break
+        case 2:
+            alert('Você escolheu 2 - Água')
+            break
+        case 3:
+            alert('Você escolheu 3 - Sorvete')
+            break
+        case 4:
+            alert('Você chamou o garçom')
+            break
+        default:
+            alert('Escolha de 1 a 4')
+            break
+    }
 }
