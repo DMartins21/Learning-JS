@@ -1,37 +1,16 @@
-var area = document.getElementById("area")
+//While
+/*
+var x = 5
 
-function entrar(){
-    var nome = prompt("Digite seu nome")
-
-    if(nome == '' || nome == null){
-        alert("Ops algo deu errado")
-        area.innerHTML = "Clique no botão para acessar..."
-    }else{
-        area.innerHTML = "Bem vindo " + nome
-
-        let botaoSair = document.createElement("button")
-        botaoSair.innerText = "Sair da conta"
-        botaoSair.onclick = sair
-        area.appendChild(botaoSair)
-    }
+while(x < 10){
+    document.write('<br> O valor de X é:' + x)
+    x++
 }
+*/
 
-function sair(){
-    alert("Até mais!")
-    area.innerHTML = "Você Saiu!"
-}
+//For
+var valor = 15
 
-// Utilizando Parametros
-function mediaAluno(nota1,nota2){
-    var media = (nota1 + nota2) / 2
-    if(media >= 7){
-        console.log("Aprovado! " + media)
-    }else{
-        console.log("Reprovado! " + media)
-    }
-}
-
-function aluno(nome,curso){
-    var mensagem = 'Seja bem vindo ' + nome + ' ao curso de ' + curso
-    console.log(mensagem)
+for(a = 0; a < valor;a++){
+    document.write('<br> O valor do A é: ' + a)
 }
