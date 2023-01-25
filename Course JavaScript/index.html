@@ -5,14 +5,21 @@
         <script src="test.js"></script>
     </head>
     <body>
-      <ul>
-        <li>1 - Suco</li>
-        <li>2 - Água</li>
-        <li>3 - Sorvete</li>
-        <li>4 - Chamar Garçom</li>
-      </ul>
+      
+      <form onsubmit="return calcular(event)">
+        <label>Digite seu peso</label><br>
+        <input type="text" name="peso" id="peso" placeholder="65"/> <br>
+        
+        <label>Digite sua  altura</label><br>
+        <input type="text" name="altura" id="altura" placeholder="1.70"/> <br>
+        
+        <input type="submit" value="calcular IMC">
+      </form>
 
-      <button onclick="pedir()">Pedir</button>
+      <div id="resultado">
+        
+      </div>
+
       <script src="test.js"></script>
     </body>
 </html>
