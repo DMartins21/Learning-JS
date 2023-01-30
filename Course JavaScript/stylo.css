@@ -1,5 +1,5 @@
-table{
-    margin: 5px;
-    border: 3px;
-    background-color: aquamarine;
+div{
+    margin: 300px 250px 250px 300px;
+    background-color: blue;
+    position: static;
 }
