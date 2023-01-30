@@ -1,24 +1,12 @@
-// Objetos
+// template strings
 
-/* let pessoa = {
-    nome:"Davi",
-    idade:22,
-    altura:1.88,
-    cargo:"Programador"
-}
+let nome = "Davi"
+let sobrenome = "Martins"
+let idade = 22
 
-let carro = {
-    nome:"Golf 1.6",
-    cor:"Vermelho",
-    potencia:"140cv"
-}
+//let mensagem = "Meu nome é " + nome + " " +sobrenome + " e eu tenho " + idade + " de idade"
 
-console.log(carro) */
+//Crase
+let mensagem = `Meu nome é ${nome} ${sobrenome} e tenho ${idade} anos`
 
-let usuarios = [
-    {nome: "Mateus", cargo: "Programador", stats: "Ativo"},
-    {nome: "Maria", cargo: "BackEnd", stats: "Ativo"},
-    {nome: "José", cargo: "RH", stats: "Ativo"}
-]
-
-console.log(usuarios)
+console.log(mensagem)
