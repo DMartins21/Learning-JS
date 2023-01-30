@@ -1,12 +1,29 @@
-// template strings
+let pessoa ={
+    nome: "Matheus",
+    sobrenome: "Vieira",
+    empresa: "CEO",
+    cargo: "Diretor"
+}
+/* 
+console.log(pessoa.nome)
+console.log(pessoa.cargo) */
 
-let nome = "Davi"
-let sobrenome = "Martins"
-let idade = 22
+/* const {nome:nomePessoa,cargo, empresa, sobrenome} = pessoa
+console.log(nomePessoa)
+console.log(sobrenome)
+console.log(empresa)
+console.log(cargo) */
 
-//let mensagem = "Meu nome é " + nome + " " +sobrenome + " e eu tenho " + idade + " de idade"
+// Desconstruindo Array
 
-//Crase
-let mensagem = `Meu nome é ${nome} ${sobrenome} e tenho ${idade} anos`
+let nomes = ["Mateus", "Lucas", "Henrique"]
 
-console.log(mensagem)
+/* let {0:mateus, 2:henrique} = nomes
+
+console.log(mateus)
+console.log(henrique) */
+
+let [primeironome, segundonome] = nomes
+
+console.log(primeironome)
+console.log(segundonome)
