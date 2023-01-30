@@ -1,29 +1,49 @@
-let pessoa ={
-    nome: "Matheus",
-    sobrenome: "Vieira",
-    empresa: "CEO",
-    cargo: "Diretor"
-}
+// Spread Operator
 /* 
-console.log(pessoa.nome)
-console.log(pessoa.cargo) */
+let primeiros = [1,2,3]
 
-/* const {nome:nomePessoa,cargo, empresa, sobrenome} = pessoa
-console.log(nomePessoa)
-console.log(sobrenome)
-console.log(empresa)
-console.log(cargo) */
+let numeros = [...primeiros,4,5,10]
 
-// Desconstruindo Array
+console.log(numeros) */
 
-let nomes = ["Mateus", "Lucas", "Henrique"]
+/* let pessoa = {
+    nome: "Matheus",
+    idade: 45,
+    cargo: "RH"
+}
 
-/* let {0:mateus, 2:henrique} = nomes
+let novaPessoa = {
+    ...pessoa,
+    status: "Ativo",
+    cidade: "Belo Horizonte / MG"
+}
 
-console.log(mateus)
-console.log(henrique) */
+console.log(novaPessoa) */
 
-let [primeironome, segundonome] = nomes
+/* function novoUsuario(info){
+    let data = {
+        ...info,
+        status:"Ativo",
+        inicio: Date.now(),
+        codigo: "511200"
+    }
+    console.log(data)
+}
 
-console.log(primeironome)
-console.log(segundonome)
+novoUsuario({nome: "Joseph", sobrenome: "Steiner", cargo:"Gerente"}) */
+
+//Rest Operator
+/* 
+function convidados(...nomes){
+    console.log("Sejam Bem Vindos")
+    console.log(nomes)
+}
+convidados("Mateus", "Lucas", "Maria", "Carol") */
+
+function sort(...numeros){
+    console.log(numeros)
+
+    const numeroGerado = Math.floor(Math.random() * numeros.length)
+    console.log(` numero gerado:${numeros[numeroGerado]}`)
+}
+sort(1,2,35,75,23,12,199,188,134,53,42,4)
