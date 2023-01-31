@@ -1,44 +1,32 @@
-// Map = Percorerer todo um array
-/* 
-let lista = ["Matheus","Jose","Maria","Lucas"]
+// Funções Anonimas
 
-lista.map((item,index) => {
-    console.log('Passando ' + item + ' está na posição ' + index)
-}) */
+/* function somar(a,b){
+    let total = a + b
+    return console.log(total)
+}
 
-//Reduce = Reduzir um array
-/* 
-let numeros = [5,3,2,4]
+somar(10,30)
 
-let total = numeros.reduce((acumulaodr, numero,indice,original) => {
-    console.log(`${acumulaodr} - Total até o momento`)
-    console.log(`${numero} - Valor atual`)
-    console.log(`${indice} - Indice atual`)
-    console.log(`${original} - Array original`)
+let subtrair = (valor1,valor2) => {
+    let total = valor1 - valor2
+    return console.log(total)
+}
 
-    return acumulaodr += numero
-})
+subtrair(50,30) */
 
-console.log(`Total do reduce ${total}`) */
 
-//Find = busca em lista
+// Usando Includes,startsWith e endsWith
+/* let nomes = ["Matheus", "Lucas", "Jose"]
 
-/* let listagem = [5,3,"Jose","Matheus",2]
+console.log(nomes.includes("Maria"))
 
-let busca = listagem.find((item) => {
-    if(item == "Jose"){
-        return console.log("Item encontrado com sucesso")
-    }
+if(nomes.includes("Matheus")){
+    console.log("Está na lista")
+}else{
+    console.log("Não está na lista")
+} */
 
-})
-console.log(busca) */
+let nome = "Matheus"
+console.log(nome.startsWith("Mat"))
 
-//Filter
-
-let palavras = ["Matheus", "Ana", "Jose", "Ricardo Silva", "Sujeito"]
-
-let resultado = palavras.filter((item) => {
-    return item.length >= 4
-})
-
-console.log(resultado)
+console.log(nome.endsWith("s"))
