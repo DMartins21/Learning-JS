@@ -1,49 +1,44 @@
-// Spread Operator
+// Map = Percorerer todo um array
 /* 
-let primeiros = [1,2,3]
+let lista = ["Matheus","Jose","Maria","Lucas"]
 
-let numeros = [...primeiros,4,5,10]
+lista.map((item,index) => {
+    console.log('Passando ' + item + ' está na posição ' + index)
+}) */
 
-console.log(numeros) */
+//Reduce = Reduzir um array
+/* 
+let numeros = [5,3,2,4]
 
-/* let pessoa = {
-    nome: "Matheus",
-    idade: 45,
-    cargo: "RH"
-}
+let total = numeros.reduce((acumulaodr, numero,indice,original) => {
+    console.log(`${acumulaodr} - Total até o momento`)
+    console.log(`${numero} - Valor atual`)
+    console.log(`${indice} - Indice atual`)
+    console.log(`${original} - Array original`)
 
-let novaPessoa = {
-    ...pessoa,
-    status: "Ativo",
-    cidade: "Belo Horizonte / MG"
-}
+    return acumulaodr += numero
+})
 
-console.log(novaPessoa) */
+console.log(`Total do reduce ${total}`) */
 
-/* function novoUsuario(info){
-    let data = {
-        ...info,
-        status:"Ativo",
-        inicio: Date.now(),
-        codigo: "511200"
+//Find = busca em lista
+
+/* let listagem = [5,3,"Jose","Matheus",2]
+
+let busca = listagem.find((item) => {
+    if(item == "Jose"){
+        return console.log("Item encontrado com sucesso")
     }
-    console.log(data)
-}
 
-novoUsuario({nome: "Joseph", sobrenome: "Steiner", cargo:"Gerente"}) */
+})
+console.log(busca) */
 
-//Rest Operator
-/* 
-function convidados(...nomes){
-    console.log("Sejam Bem Vindos")
-    console.log(nomes)
-}
-convidados("Mateus", "Lucas", "Maria", "Carol") */
+//Filter
 
-function sort(...numeros){
-    console.log(numeros)
+let palavras = ["Matheus", "Ana", "Jose", "Ricardo Silva", "Sujeito"]
 
-    const numeroGerado = Math.floor(Math.random() * numeros.length)
-    console.log(` numero gerado:${numeros[numeroGerado]}`)
-}
-sort(1,2,35,75,23,12,199,188,134,53,42,4)
+let resultado = palavras.filter((item) => {
+    return item.length >= 4
+})
+
+console.log(resultado)
